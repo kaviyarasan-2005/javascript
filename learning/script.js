@@ -35,3 +35,19 @@ console.log(s);
     console.log(array);
     console.log(array.splice(1,0,1));
     console.log(array);
+    let val = true;
+    if(val){
+        console.log("yes");
+    }
+    else{
+        console.log("no");
+    }
+let item = {
+    id:1,
+    name:'kaviyarasan',
+    add(){
+        console.log("nick name added kavi");
+    }
+}
+item.add()
+
