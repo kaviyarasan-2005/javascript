@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+#header{
+    display: flex;
+    color: brown;
+}
+#head{
+    flex: 1;
+}
+#code{
+    padding: 10px;
+}
+#color{
+     height:90vh;
+    width:100vw;
+    border-top:3px solid #323232;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
