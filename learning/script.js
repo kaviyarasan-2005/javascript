@@ -196,3 +196,45 @@ set.add(5)
 let map2 = new Map();
 map2.set('a',1);
 console.log(map2);
+// this is object
+let user={
+    name:"kavi",
+    id :21,
+    login(){
+        console.log('hi',this.name);
+    }
+}
+user.login();
+
+// class
+class User{
+    name;
+     id;
+     static numberOfusers=0;
+    constructor(name,age,amt){
+        this.name = name;
+        this.age = age;
+        this.amt=amt
+        User.numberOfusers+=1;
+    }
+    login(){
+        console.log('hi',this.name);
+    }
+}
+let userone = new User('kaviyarasan',21,100);
+let usertwo = new User('kavi',21,250);
+// userone.login();
+console.log(User.numberOfusers+" loggedin");
+class paidUser extends User{
+    level(){
+        if(this.amt <200){
+            console.log(this.name+' is a pro user');
+        }
+        else{
+            console.log(this.name+" is a premium user");
+        }
+    }
+}
+let paiduser1 = new paidUser('raja',31,250);
+paiduser1.login();
+paiduser1.level();
