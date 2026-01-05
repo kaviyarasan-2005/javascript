@@ -226,6 +226,13 @@ let usertwo = new User('kavi',21,250);
 // userone.login();
 console.log(User.numberOfusers+" loggedin");
 class paidUser extends User{
+    constructor(name,age,amt){
+        // this willl not work use super keyword
+        // this.name = name;
+        // this.age = age;
+        super(name,age);
+        this.amt=amt
+    }
     level(){
         if(this.amt <200){
             console.log(this.name+' is a pro user');
