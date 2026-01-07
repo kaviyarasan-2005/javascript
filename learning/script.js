@@ -1,8 +1,9 @@
+
 function say(){
         alert("Button clicked");
     }
 
-    document.write("<h2>This text is written inside a script as a HTML</h2>");
+   
 function change(){
     document.getElementById("name").innerHTML="Changed name ";
     console.log("kaviyarasan");
@@ -19,7 +20,7 @@ function change(){
     const sums = a+b;
     console.log(sums);
 }
-str1 = "kaviyarasan";
+let str1 = "kaviyarasan";
 let num = Number(Math.floor(Math.random()*11));
 console.log(str1[num]);
 let s = 95;
@@ -147,7 +148,7 @@ console.log(prop.name+" After deleting");
 arr = [1,2,3,4];
 arr[1] = 12;
 let newarr = [5,6,7,8,9];
-res = [...arr,...newarr];
+let res = [...arr,...newarr];
 console.log(res); 
 res[1] = 34;
 console.log(arr);
@@ -245,3 +246,11 @@ class paidUser extends User{
 let paiduser1 = new paidUser('raja',31,250);
 paiduser1.login();
 paiduser1.level();
+function time(){
+    console.log('steps');
+}
+setTimeout(()=>{console.log("step 1")},1000);
+setTimeout(()=>{time()},4000)
+console.log("next");
+// execute every 2 sec
+// setInterval(()=>{console.log("hi")},2000);
