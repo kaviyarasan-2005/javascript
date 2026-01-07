@@ -2,8 +2,6 @@
 function say(){
         alert("Button clicked");
     }
-
-   
 function change(){
     document.getElementById("name").innerHTML="Changed name ";
     console.log("kaviyarasan");
@@ -249,8 +247,97 @@ paiduser1.level();
 function time(){
     console.log('steps');
 }
-setTimeout(()=>{console.log("step 1")},1000);
-setTimeout(()=>{time()},4000)
+// setTimeout(()=>{console.log("step 1")},1000);
+// setTimeout(()=>{time()},4000)
 console.log("next");
 // execute every 2 sec
 // setInterval(()=>{console.log("hi")},2000);
+// let promise = new Promise((resolve,reject)=>{
+//     let ticket = true;
+//     if(ticket){
+//         resolve(1);
+//     }
+//     else{
+//         reject(2);
+//     }
+// });
+// promise.then(sucess).catch(failed).finally(()=>{console.log("completed")});
+// function sucess(a){
+//     console.log("will"+a);
+// }
+// function failed(a){
+//     console.log("not"+a);
+// }
+
+
+// let kavi = new Promise((resolve,reject)=>{
+//     let val = true;
+//     if(val){
+//         setTimeout(resolve,4000,"kavi reached");
+//     }
+//     else{
+//         reject("kavi not reached");
+//     }
+// });
+
+// let ravi = new Promise((resolve,reject)=>{
+//     let val = false;
+//     if(val){
+//         setTimeout(resolve,4000,"ravi reached");
+//     }
+//     else{
+//         reject("ravi not reached");
+//     }
+// });
+
+// let mohan = new Promise((resolve,reject)=>{
+//      let val = true;
+//     if(val){
+//         setTimeout(resolve,1000,"mohan reached");
+//     }
+//     else{
+//         reject("mohan not reached");
+//     }
+// });
+
+// Promise.race([kavi,ravi,mohan])
+// .then((mess)=>{console.log(mess +" race")})
+// .catch((mess)=>{console.log(mess+" race")});
+// Promise.all([kavi,ravi,mohan])
+// .then((mess)=>{console.log(mess+" all")})
+// .catch((mess)=>{console.log(mess+" all")});
+// Promise.allSettled([kavi,ravi,mohan])
+// .then((mess)=>{console.log(JSON.stringify(mess)+" settled")})
+// .catch((mess)=>{console.log(JSON.stringify(mess)+" settled")});
+// Promise.any([kavi,ravi,mohan])
+// .then((mess)=>{console.log(mess+" any")})
+// .catch((mess)=>{console.log(mess+" any")});
+
+try{
+    let n = prompt("enter a number");
+if(n ==''|| n == ' '){
+    throw "enter any number"
+}
+if(isNaN(n)){
+    throw "enter digits only"
+}
+    console.log(n**2);
+}
+catch(err){
+    console.log(err);
+}
+finally{
+    console.log("this is finally block");
+}
+
+
+
+
+
+
+
+
+
+
+
+
