@@ -312,32 +312,50 @@ console.log("next");
 // Promise.any([kavi,ravi,mohan])
 // .then((mess)=>{console.log(mess+" any")})
 // .catch((mess)=>{console.log(mess+" any")});
-
-try{
-    let n = prompt("enter a number");
-if(n ==''|| n == ' '){
-    throw "enter any number"
-}
-if(isNaN(n)){
-    throw "enter digits only"
-}
-    console.log(n**2);
-}
-catch(err){
+// try catch 
+// try{
+//     let n = prompt("enter a number");
+// if(n ==''|| n == ' '){
+//     throw "enter any number"
+// }
+// if(isNaN(n)){
+//     throw "enter digits only"
+// }
+//     console.log(n**2);
+// }
+// catch(err){
+//     console.log(err);
+// }
+// finally{
+//     console.log("this is finally block");
+// }
+let asyncpromise = new Promise((resolve,reject)=>{
+    let val = false;
+    if(val){
+        setTimeout(resolve,3000,"kavi  reached")
+    }
+    else{
+        reject("kavi not reached");
+    }
+});
+async function asyncstatus() {
+   try{
+     let a = await asyncpromise;
+    console.log(a);
+   }
+   catch(err){
     console.log(err);
+   }
 }
-finally{
-    console.log("this is finally block");
-}
-
-
-
-
-
-
-
-
-
-
-
+asyncstatus();
+// json
+// let response =
+fetch("https://official-joke-api.appspot.com/random_joke")
+  .then(res => res.json())
+  .then(mes => {
+    console.log(mes.setup);
+  })
+  .catch(err => {
+    console.log(err);
+  });
 
