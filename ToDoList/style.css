@@ -1,0 +1,31 @@
+body{
+    background-color: antiquewhite;
+}
+#container{
+    position: relative;
+    top: 28vh;
+    background-color: rgb(187, 188, 188);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: a;
+    justify-self: center;
+}
+#h2{
+    justify-self: center;
+}
+input{
+    padding: 5px;
+    margin: 2px;
+    border-radius: 8px;
+    background-color: rgb(224, 227, 210);
+}
+button{
+     padding: 5px;
+     margin: 2px;
+     background-color: rgb(249, 182, 96);
+     border-color: rgb(168, 111, 36);
+     border-radius: 10px;
+}
+#result{
+    padding: 10px;
+}
