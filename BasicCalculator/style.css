@@ -1,0 +1,17 @@
+#container{
+    
+}
+#input{
+    display: inline-grid;
+    grid-template-columns: 3;
+}
+#output{
+    border: 1px solid black;
+    position: relative;
+    height: fit-content;
+    
+}
+#outele{
+    font-size: larger;
+
+}
