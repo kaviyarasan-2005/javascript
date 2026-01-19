@@ -1,17 +1,47 @@
 #container{
-    
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    left: 39vw;
+    top: 28vh;
+    background-color: rgb(79, 137, 79);
 }
 #input{
-    display: inline-grid;
-    grid-template-columns: 3;
+     display: inline-grid;
+     grid-template-columns: repeat(4,1fr);
+
 }
 #output{
-    border: 1px solid black;
+    margin: 5px;
     position: relative;
-    height: fit-content;
-    
 }
 #outele{
-    font-size: larger;
-
+    background-color: antiquewhite;
+    justify-self: center;  
+    border-radius: 3px;
+    border: 0px ;
+    height: 30px;
+    padding: 0px 4px 0px 5px;
+}
+h2{
+    margin: 0;
+}
+button{
+   
+    border-radius: 3px;
+    border: 0px ;
+    background-color: antiquewhite;
+    font-weight: bold;
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+}
+#response{
+    justify-items: center;
+    justify-self: center;
+}
+body{
+    background-color: rgb(194, 196, 193);
 }

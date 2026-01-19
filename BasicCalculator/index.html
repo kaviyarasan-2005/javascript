@@ -8,26 +8,32 @@
 </head>
 <body>
     <div id="container">
-        <div id="output">
-            <p id="outele"></p>
+        
+        <div id="response">
+            <h2>Calculator</h2>
+            <div id="output">
+           <input type="text" id="outele" disabled>
         </div>
        <div id="input"> 
-         <button id="seven">7</button>
-         <button id="eight">8</button>
-          <button id="nine">9</button>
-           <button id="add">+</button>
-           <button id="four">4</button>
-           <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="one">1</button>
-             <button id="two">2</button>
-            <button id="three">3</button>
-           <button id="zero">0</button>
-             <button id="sub">-</button>
-              <button id="multi">x</button>
-               <button id="div">/</button>
-               <button id="calc">=</button>
+        <button id="seven" onclick="Append('7')">7</button>
+        <button id="eight"  onclick="Append('8')">8</button>
+        <button id="nine"  onclick="Append('9')">9</button>
+        <button id="add"  onclick="Append('+')">+</button>
+        <button id="four"  onclick="Append('4')">4</button>
+        <button id="five" onclick="Append('5')">5</button>
+        <button id="six" onclick="Append('6')">6</button>
+        <button id="sub" onclick="Append('-')">-</button>
+        <button id="one" onclick="Append('1')">1</button>
+        <button id="two" onclick="Append('2')">2</button>
+        <button id="three" onclick="Append('3')">3</button>
+        <button id="multi" onclick="Append('*')">x</button>
+         <button onclick="clears()">AC</button>
+         <button id="zero" onclick="Append('0')">0</button>
+        <button id="calc" onclick="calculate()">=</button>
+        <button id="div" onclick="Append('/')">/</button>
+       
                </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
