@@ -1,11 +1,15 @@
 let expression = document.getElementById('outele');
 
 function Append(inp){
+    // 
     expression.value +=inp;
     console.log(expression+" this is expression ");
 }
 function calculate(){
    try{
+    if(expression.value == ''){
+        throw "enter values";
+    }
      let result = eval(expression.value);
     expression.value = result;
    }
