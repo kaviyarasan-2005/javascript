@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background-color: rgb(218, 217, 217);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+#heading {
+    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 200px;
+}
+
+#searchicon {
+    /* position: relative; */
+    margin-left: 80px;
+  background-color: white;
+  border: 1px solid rgb(97, 91, 91);
+  border-right: none;
+  padding: 6px 10px;
+}
+
+#searchbar {
+    /* position: relative; */
+  width: 300px;
+  border: 1px solid gray;
+  border-left: none;
+  padding: 6px;
+  outline: none;
+}
+
+#login:hover{
+     border-radius: 4px;
+    background-color: rgb(131, 187, 251);
+}
+#login{
+   height: 20px;
+    margin-left: 240px;
+    padding: 5px 10px 5px 10px;
+}
+#cart{
+    margin-left:30px ;
+    padding: 5px 8px 5px 8px;
+}
+#cart:hover{
+    border-radius: 4px;
+    background-color: rgb(131, 187, 251);
+}
+#customercare{
+    margin-left: 30px;
+    padding: 9px 3px 3px 3px;
+    width: 150px;
+    height: 30px;
+}
+#customercare:hover{
+     border-radius: 4px;
+    background-color: rgb(131, 187, 251);
+}
+
+
+#catogry-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 80px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+#Minutes{
+    margin-top: 10px;
+}
+#Advertaisebanner{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#best-deals-smartphone{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+#best-deals-container{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-txt{
+   justify-self: center;
+    color: black;
+}
+#offers-grid1{
+    background-color: white;
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+#footer{
+    background-color: black ;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#inside-footer{
+    display: grid;
+    color: rgb(242, 241, 241);
+    font-weight: bold;
+}
