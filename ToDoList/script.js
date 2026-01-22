@@ -1,12 +1,32 @@
-let show = document.querySelector("#result");
+let show = document.getElementById('result');
 let btn = document.getElementById("button");
 let input = document.getElementById("input");
-let todo =[];
+let todos =[];
 btn.addEventListener("click",function (){
-    let list = document.createElement("p");
-    todo.push(input.value);
-    list.textContent = input.value;
-    show.appendChild(list);
+    
+    todos.push(input.value);
+    addtodo(input.value);
+    console.log(todos);
     input.value ='';
 });
-
+function addtodo(todo){
+    let para = document.createElement("p");
+    para.innerText = todo;
+    show.appendChild(para);
+    para.addEventListener('click',()=>{
+        para.style.textDecoration='line-through';
+        remove(todo);
+    });
+     para.addEventListener('dblclick',()=>{
+        show.removeChild(para);
+        remove(todo);
+    });
+}
+function remove(todo){
+    let index = todos.indexOf(todo);
+    if(index<0){
+        return;
+    }
+    // console.log(index);
+    todos.splice(index,1);
+}
