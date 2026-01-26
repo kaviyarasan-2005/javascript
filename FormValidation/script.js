@@ -13,9 +13,9 @@
 // }
 form.addEventListener('submit',(e)=>{
   
-  if(!validateInputs()){
-  e.preventDefault();
-  }
+if(!validateInputs()){e.preventDefault();}
+
+
   
 });
 function validateInputs(){
@@ -23,33 +23,33 @@ function validateInputs(){
     const EmailValue = email.value.trim();
     const PasswordValue = password.value.trim();
     const CpasswordValue = cpassword.value.trim();
-    const sucess = false;
+    let sucess = true;
 //    console.log(`${UsernameValue} - ${EmailValue} - ${PasswordValue} - ${CpasswordValue}`);
     if(UsernameValue === ''){
         setError(username,'Username is required');
-        sucess = true;
+        sucess = false;
     }
     else{
         setSucess(username);
     }
     if(EmailValue ===''){
-        sucess = true;
+        sucess = false;
         setError(email,'Enter email');
     }
     else if(!isEmail(EmailValue)){
         setError(email,'Enter a valid email');
-        sucess = true;
+        sucess = false;
     }
     else{
         setSucess(email);
     }
     if(PasswordValue.length < 8){
-        sucess = true;
+        sucess = false;
         setError(password,'password should grater than 8 ')
          setError(cpassword,'password should grater than 8 ')
     }
     else if(PasswordValue != CpasswordValue){
-        sucess = true;
+        sucess = false;
          setError(password,'does not match with Password')
         setError(cpassword,'does not match with Password')
     }
@@ -57,7 +57,7 @@ function validateInputs(){
         setSucess(cpassword);
         setSucess(password);
     }
-    return success;
+    return sucess;
 }
 function setError(element,message){
     const InputGroup = element.parentElement;
