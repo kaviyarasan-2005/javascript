@@ -13,16 +13,19 @@
 // }
 form.addEventListener('submit',(e)=>{
   
-if(!validateInputs()){e.preventDefault();}
+if(!validateInputs()){
+    console.log("prevent Default");
+    e.preventDefault();
+}
 
 
   
 });
 function validateInputs(){
-    const UsernameValue = username.value.trim();
-    const EmailValue = email.value.trim();
-    const PasswordValue = password.value.trim();
-    const CpasswordValue = cpassword.value.trim();
+    const UsernameValue   = username.value.trim();
+    const EmailValue      = email.value.trim();
+    const PasswordValue   = password.value.trim();
+    const CpasswordValue  = cpassword.value.trim();
     let sucess = true;
 //    console.log(`${UsernameValue} - ${EmailValue} - ${PasswordValue} - ${CpasswordValue}`);
     if(UsernameValue === ''){
@@ -62,7 +65,7 @@ function validateInputs(){
 function setError(element,message){
     const InputGroup = element.parentElement;
     const errorElement = InputGroup.querySelector('.error-message');
-    errorElement.value = message;
+    // errorElement.value = message;
     errorElement.textContent = message;
     InputGroup.classList.add('error');
     InputGroup.classList.remove('sucess');
