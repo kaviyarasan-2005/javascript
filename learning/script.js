@@ -69,7 +69,6 @@ function* generators(){
     let ind = 1;
    
     while(ind < 5){
-     
         yield ind++;
     }
 }
